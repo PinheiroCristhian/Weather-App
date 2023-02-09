@@ -10,7 +10,6 @@ import APICall from "./modules/APICall";
         if (!cityName.value || cityName.value[0] === ' ') return null;
         
         const cityData = await APICall(cityName.value);
-        console.log(cityData);
         display(cityData.name, cityData.sys.country, cityData.main.temp, cityData.main.humidity, cityData.weather[0].description);
         
     })
