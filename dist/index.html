@@ -8,7 +8,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <main id="mainSection">
+        <form id="searchForm" onkeypress="return event.keyCode != 13">
+            <input type="text" name="searchField" id="searchField" placeholder="Enter City Name">
+            <input type="button" value="Search" id="searchButton">
+        </form>
+        <section id="cityInformations">
+            <div id="cityInformationsCard">
+                <p id="cityName"></p>
+                <p id="countryName"></p>
+                <p id="cityTemperature"></p>
+                <p id="cityHumidity"></p>
+                <p id="cityWeather"></p>
+            </div>
+        </section>
+    </main>
 
     <script src="bundle.js"></script>
 </body>
